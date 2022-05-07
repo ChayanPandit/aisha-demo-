@@ -1,0 +1,36 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*navbar css*/
+
+/*navbar css ends*/
+
+
+
+/*carousel*/
+body{
+    background-color: rgb(244, 230, 230) !important;
+}
+
+.aboutall{
+    display: flex;
+    font-size: 120%;
+    justify-content: space-evenly;
+    text-align: left;
+    line-height: 150%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.about-txt{
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+.about-gif{
+  margin-top: 7%;
+}
+.heading{
+  font-size: 140%;
+  font-weight: 400%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/*footer*/

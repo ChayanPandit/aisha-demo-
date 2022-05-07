@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  align-items: center;
+  min-height: 100vh;
+}
+ .row{
+   display: flex;
+ }
+ .column{
+   flex: 50%;
+ }
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 8%;
+  width: 50%;
+  margin-bottom: 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width:33%;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img{
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 80%;
+  height:60%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #356b9a;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  /* border-top: 1px solid #e1f1ff; */
+}
+
+/* .pricing-features-item:last-child{
+  /* border-bottom: 1px solid #e1f1ff; */
+ */
+
+.pricing-price {
+  color: #489FB5; 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #489FB5;
+  display: inline-block;
+  padding: 15px 35px;
+  margin-bottom: 10%;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+  background-color: #EEA31E;
+  text-decoration: none;
+  color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #489FB5;
+  color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color: #EDE7E3;
+  color: #16697A;
+}
+
+
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #356b9a;
+    padding: 25px 50px;
+  
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+
+.tips-container{
+  height:100%;
+  width:100vw;
+  padding:5%;
+}
+.tips-head{
+  background-color: #16697A;
+  height:100%;
+  width: auto;
+  margin-left:-10%;
+  margin-right:-10%;
+  margin-top: 10%;
+  padding:1%;
+  color: #e1f1ff;
+  font-weight: 100;
+  font-size: 300%;
+  margin-bottom: 10%;
+}
+.main-timeline{ font-family: 'Poppins', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: calc(50% + 1px);
+    margin: 0 0 25px;
+    float: left;
+}
+.main-timeline .timeline-content{
+    color: #777;
+    padding: 20px 0 0 0;
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.timeline-icon{
+    color: #666;
+    background: linear-gradient(135deg,#E847D4,#8D70F6);
+    font-size: 45px;
+    text-align: center;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    right: -60px;
+    z-index: 1;
+}
+.main-timeline .timeline-icon:before{
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px rgba(0,0,0,0.25);
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    top: 18px;
+    bottom: 18px;
+    z-index: -1;
+}
+.main-timeline .title{
+    color: #fff;
+    background: linear-gradient(to left,#4A6675,#9EA6AB);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 5px 5px 25px;
+    margin: 0 0 15px;
+    border-radius: 20px 0 0 20px;
+}
+.main-timeline .description{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin: 0 65px 0 20px;
+}
+.main-timeline .timeline:nth-child(even){ float: right; }
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+    right: auto;
+    left: -60px;
+}
+.main-timeline .timeline:nth-child(even) .title{
+    padding: 5px 5px 5px 80px;
+    border-radius: 0 20px 20px 0;
+}
+.main-timeline .timeline:nth-child(even) .description{ margin: 0 10px 0 80px; }
+.main-timeline .timeline:nth-child(even) .title{ background: linear-gradient(to right,#4A6675,#9EA6AB); }
+.main-timeline .timeline:nth-child(4n+2) .timeline-icon{ background: linear-gradient(135deg,#316CCA,#00F5BF); }
+.main-timeline .timeline:nth-child(4n+3) .timeline-icon{ background: linear-gradient(135deg,#EEA31E,#FF6185); }
+@media screen and (max-width:767px){
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        padding-top: 130px;
+        margin: 0 0 40px;
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 0;
+        text-align: center;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        transform: translateX(-50%);
+        top: -130px;
+        left: 50%;
+        right: auto;
+    }
+    .main-timeline .title,
+    .main-timeline .timeline:nth-child(even) .title{
+        background: linear-gradient(to right,#4A6675,#9EA6AB);
+        border-radius: 20px;
+        display: inline-block;
+        padding: 5px 25px;
+        margin: 0 0 10px;
+    }
+    .main-timeline .description,
+    .main-timeline .timeline:nth-child(even) .description{
+        margin: 0;
+    }
+}
+.main-section{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
